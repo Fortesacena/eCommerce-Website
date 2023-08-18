@@ -1,5 +1,14 @@
+:root {
+  --green: #088178;
+  --black: #1a1a1a;
+  --banner-cl: #fff;
+  --border-cl: #e2e9e1;
+  
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(responsive.css);
+
 
 * {
   margin: 0;
@@ -114,13 +123,13 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--black);
   transition: 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: var(--green);
 }
 
 #navbar li a.active::after,
@@ -128,7 +137,7 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: var(--green);
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -159,13 +168,13 @@ body {
 }
 
 #hero h1 {
-  color: #088178;
+  color: var(--green);
 }
 
 #hero button {
   background-image: url("../img/button.png");
   background-color: transparent;
-  color: #088178;
+  color: var(--green);
   border: 0;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
@@ -206,7 +215,7 @@ body {
   padding: 9px 8px 6px 8px;
   line-height: 1;
   border-radius: 4px;
-  color: #088178;
+  color: var(--green);
   background-color: #fddde4;
 }
 
@@ -256,7 +265,7 @@ body {
 
 #product1 .pro .des h5 {
   padding-top: 7px;
-  color: #1a1a1a;
+  color: var(--black);
   font-size: 14px;
 }
 
@@ -269,7 +278,7 @@ body {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color: #088178;
+  color: var(--green);
 }
 
 #product1 .pro .fa-cart-shopping {
@@ -279,7 +288,7 @@ body {
   border-radius: 50px;
   background-color: #e8f6ea;
   font-weight: 500;
-  color: #088178;
+  color: var(--green);
   border: 1px solid #cce7d0;
   position: absolute;
   bottom: 20px;
@@ -303,12 +312,12 @@ body {
 }
 
 #banner h4 {
-  color: #fff;
+  color: var(--banner-cl);
   font-size: 16px;
 }
 
 #banner h2 {
-  color: #fff;
+  color: var(--banner-cl);
   font-size: 16px;
   padding: 10px 0;
 }
@@ -320,8 +329,8 @@ body {
 }
 
 #banner button:hover {
-  background: #088178;
-  color: #fff;
+  background: var(--green);
+  color: var(--banner-cl);
 }
 
 /* ----------------------SM-BANNER------------------------ */
@@ -350,27 +359,27 @@ body {
 }
 
 #sm-banner h4 {
-  color: #fff;
+  color: var(--banner-cl);
   font-size: 20px;
   font-weight: 300;
 }
 
 #sm-banner h2 {
-  color: #fff;
+  color: var(--banner-cl);
   font-size: 28px;
   font-weight: 800;
 }
 
 #sm-banner span {
-  color: #fff;
+  color: var(--banner-cl);
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 15px;
 }
 
 #sm-banner .banner-box:hover button {
-  background: #088178;
-  border: 1px solid #088178;
+  background: var(--green);
+  border: 1px solid var(--green);
 }
 
 /* ----------------------BANNER3------------------------ */
@@ -406,7 +415,7 @@ body {
 
 
 #banner3 h2 {
-  color: #fff;
+  color: var(--banner-cl);
   font-weight: 900;
   font-size: 22px;
 }
@@ -432,7 +441,7 @@ body {
 #newsletter h4 {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  color: var(--banner-cl);
 }
 
 #newsletter p {
@@ -463,8 +472,8 @@ body {
 }
 
 #newsletter button {
-  background-color: #088178;
-  color: #fff;
+  background-color: var(--green);
+  color: var(--banner-cl);
   white-space: nowrap;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -516,7 +525,7 @@ footer .follow i {
 }
 
 footer .install .row img {
-  border: 1px solid #088178;
+  border: 1px solid var(--green);
   border-radius: 6px;
 }
 
@@ -526,7 +535,7 @@ footer install img {
 
 footer .follow i:hover,
 footer a:hover {
-  color: #088178;
+  color: var(--green);
 }
 
 footer .copyright {
@@ -552,7 +561,7 @@ footer .copyright {
 
 #hero-shop h2,
 #hero-shop p{
-  color: #fff;
+  color: var(--banner-cl);
 }
 
 #pagination{
@@ -561,10 +570,10 @@ footer .copyright {
 
 #pagination a{
   text-decoration: none;
-  background-color: #088178;
+  background-color: var(--green);
   padding: 15px 20px;
   border-radius: 4px;
-  color: #fff;
+  color: var(--banner-cl);
   font-weight: 600;
 }
 
@@ -625,11 +634,11 @@ footer .copyright {
 }
 
 #blog .blog-details a:hover {
-  color: #088178;
+  color: var(--green);
 }
 
 #blog .blog-details a:hover::after {
-  background-color: #088178;
+  background-color: var(--green);
 }
 
 
@@ -752,8 +761,8 @@ padding: 10px 0;
 }
 
 #form-details form button{
-  background-color: #088178;
-  color: #fff;
+  background-color: var(--green);
+  color: var(--banner-cl);
 
 }
 
@@ -827,7 +836,7 @@ padding: 10px 0;
 }
 
 #cart table thead{
-  border: 1px solid #e2e9e1;
+  border: 1px solid var(--border-cl);
   border-left:none;
   border-right: none;
 }
@@ -868,20 +877,20 @@ padding: 10px 0;
   outline:none;
   width: 60%;
   margin-right:10px;
-  border:1px solid #e2e9e1;
+  border:1px solid var(--border-cl);
 }
 
 #coupon button,
 #subtotal button{
-  background-color: #088178;
-  color:#fff;
+  background-color: var(--green);
+  color:var(--banner-cl);
   padding: 12px 20px;
 }
 
 #subtotal{
   width: 50%;
   margin-bottom:30px;
-  border: 1px solid #e2e9e1;
+  border: 1px solid var(--border-cl);
   padding: 30px;
 }
 
@@ -893,7 +902,7 @@ padding: 10px 0;
 
 #subtotal table td{
   width: 50%;
-  border: 1px solid #e2e9e1;
+  border: 1px solid var(--border-cl);
   padding: 10px;
   font-size: 13px;
 }
