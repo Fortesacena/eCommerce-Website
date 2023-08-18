@@ -98,7 +98,8 @@
     }
 
     #feature{
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 5px;
     }
 
     #feature .fe-box{
@@ -119,12 +120,17 @@
     }
 
     #newsletter{
-        padding: 40px 20px;
+        padding: 40px 10px 20px 30px;
     }
 
     #newsletter .form{
         width: 100%;
     }
+
+    #newsletter .form input{
+        width: 300px;
+    }
+
 
     footer .copyright{
         text-align: start;
